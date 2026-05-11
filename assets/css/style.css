@@ -624,10 +624,32 @@ section .section-title h2 {
   object-position: 50% 25%;
   display: block;
   filter: grayscale(1) contrast(1.15) brightness(0.78);
-  transition: filter 0.3s;
+  transition: filter 0.3s, transform 0.3s;
 }
 .gallery figure:hover img {
   filter: grayscale(1) contrast(1.18) brightness(0.9);
+}
+
+/* Stills gallery: .thumb wraps each image and clips at its own bounds, so
+   the zoom never overflows into the caption below. */
+.gallery:not(.colour):not(.color) figure .thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.gallery:not(.colour):not(.color) figure .thumb img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  transform: scale(1.15);
+}
+.gallery:not(.colour):not(.color) figure:hover .thumb img {
+  transform: scale(1.18);
+}
+.gallery:not(.colour):not(.color) figure figcaption {
+  margin-top: 1.2rem;
+  padding-top: 0.2rem;
 }
 
 /* Colour gallery variant for festival event photos */
