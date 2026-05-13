@@ -802,7 +802,7 @@ section .section-title h2 {
   align-items: center;
   justify-content: center;
   width: 250px;
-  height: 140px;
+  height: 90px;
   text-decoration: none;
   border: none;
   color: var(--cream);
@@ -821,11 +821,11 @@ section .section-title h2 {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.35em;
+  gap: 0.25em;
 }
 .laurel-link .l-text .official {
   font-family: 'Inter', sans-serif;
@@ -869,7 +869,7 @@ section .section-title h2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
-  .laurel-link { width: 170px; height: 95px; }
+  .laurel-link { width: 180px; height: 65px; }
 }
 
 /* ----- Festivals page grid (legacy) ----- */
