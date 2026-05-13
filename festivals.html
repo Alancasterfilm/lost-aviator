@@ -26,40 +26,81 @@
 
 <main>
 
+  <!-- Laurel wreath SVG — tall narrow branches on each side, wide gap for text -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="laurel-wreath" viewBox="0 0 500 180">
+        <g fill="currentColor">
+          <!-- LEFT BRANCH — tall narrow "(" on the left side only -->
+          <path d="M 120 20 C 65 25, 40 60, 40 90 C 40 120, 65 155, 120 160"
+                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(101 23) rotate(347)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(71 36) rotate(326)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(51 56) rotate(304)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(41 79) rotate(282)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(41 101) rotate(258)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(51 124) rotate(236)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(71 144) rotate(214)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(101 157) rotate(194)"/>
+
+          <!-- RIGHT BRANCH — tall narrow ")" on the right side only (mirror) -->
+          <path d="M 380 20 C 435 25, 460 60, 460 90 C 460 120, 435 155, 380 160"
+                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(399 23) rotate(13)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(429 36) rotate(34)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(449 56) rotate(56)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(459 79) rotate(78)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(459 101) rotate(102)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(449 124) rotate(124)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(429 144) rotate(146)"/>
+          <path d="M 0 0 Q 6 -10 0 -28 Q -6 -10 0 0 Z" transform="translate(399 157) rotate(166)"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
   <div class="page-title">
     <span class="eyebrow">Official Selection</span>
     <h1>Festivals</h1>
     <span class="rule"></span>
   </div>
 
-  <div class="festival-grid">
+  <div class="festival-laurels">
 
-    <a class="festival" href="#london" style="border-bottom: 1px solid rgba(235, 224, 200, 0.2); color: inherit;">
-      <div class="laurel-icon">✦</div>
-      <h3>London Film Festival</h3>
-      <div class="year">2014 &nbsp;•&nbsp; Official Selection</div>
-      <p class="city">BFI Southbank, London</p>
+    <a class="laurel-link" href="#london">
+      <svg class="wreath" viewBox="0 0 200 240" aria-hidden="true" focusable="false"><use href="#laurel-wreath"/></svg>
+      <div class="l-text">
+        <div class="official">Official Selection</div>
+        <div class="fest">BFI London<br>Film Festival</div>
+        <div class="yr">2014</div>
+      </div>
     </a>
 
-    <a class="festival" href="#sydney" style="border-bottom: 1px solid rgba(235, 224, 200, 0.2); color: inherit;">
-      <div class="laurel-icon">✦</div>
-      <h3>Sydney Film Festival</h3>
-      <div class="year">2015 &nbsp;•&nbsp; Official Selection</div>
-      <p class="city">State Theatre, Sydney</p>
+    <a class="laurel-link" href="#sydney">
+      <svg class="wreath" viewBox="0 0 200 240" aria-hidden="true" focusable="false"><use href="#laurel-wreath"/></svg>
+      <div class="l-text">
+        <div class="official">Official Selection</div>
+        <div class="fest">Sydney<br>Film Festival</div>
+        <div class="yr">2015</div>
+      </div>
     </a>
 
-    <a class="festival" href="#miami" style="border-bottom: 1px solid rgba(235, 224, 200, 0.2); color: inherit;">
-      <div class="laurel-icon">✦</div>
-      <h3>Miami Film Festival</h3>
-      <div class="year">2015 &nbsp;•&nbsp; Official Selection</div>
-      <p class="city">Olympia Theater, Miami</p>
+    <a class="laurel-link" href="#miami">
+      <svg class="wreath" viewBox="0 0 200 240" aria-hidden="true" focusable="false"><use href="#laurel-wreath"/></svg>
+      <div class="l-text">
+        <div class="official">Official Selection</div>
+        <div class="fest">Miami<br>Film Festival</div>
+        <div class="yr">2015</div>
+      </div>
     </a>
 
-    <a class="festival" href="#niagara" style="border-bottom: 1px solid rgba(235, 224, 200, 0.2); color: inherit;">
-      <div class="laurel-icon">✦</div>
-      <h3>Niagara Falls Film Festival</h3>
-      <div class="year">2015 &nbsp;•&nbsp; Official Selection</div>
-      <p class="city">Niagara Falls, Canada</p>
+    <a class="laurel-link" href="#niagara">
+      <svg class="wreath" viewBox="0 0 200 240" aria-hidden="true" focusable="false"><use href="#laurel-wreath"/></svg>
+      <div class="l-text">
+        <div class="official">Official Selection</div>
+        <div class="fest">Niagara<br>Film Festival</div>
+        <div class="yr">2015</div>
+      </div>
     </a>
 
   </div>
